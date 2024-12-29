@@ -1,0 +1,21 @@
+mode: remote
+identifier: devops-bot
+category: dev
+username: root
+
+jobs:
+  - stages:
+      - name: Gradel Setup
+        tasks:
+          setup_and_clone:
+            enabled: true
+            clone_dir: "${ver.clone_dir}"
+            source_url: "${ver.source_url}"
+
+
+      - name: Gradel Build
+        tasks:
+          gradle:
+            enabled: true
+            target: "build"
+            output_dir: "${ver.output_dir}"
