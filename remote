@@ -1,0 +1,15 @@
+identifier:
+  type: str
+  value: devops-bot
+
+clone_dir:
+  type: str
+  value: "/tmp/clone_repo_trial2"
+
+source_url:
+  type: str
+  value: "https://github.com/deeeye2/simple-web-app.git"
+
+output_dir:
+  type: str
+  value: "/tmp/gradle_artifacts"
