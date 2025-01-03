@@ -1,6 +1,6 @@
 identifier:
   type: str
-  value: devops-bot
+  value: agent-1
 
 clone_dir:
   type: str
