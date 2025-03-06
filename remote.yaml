@@ -1,15 +1,18 @@
-identifier:
+instance_type:
   type: str
-  value: agent-1
+  value: t2.midum
 
-clone_dir:
+key_name:
   type: str
-  value: "/tmp/clone_repo_trial2"
+  value: "jenkins_key"
 
-source_url:
+security_group:
   type: str
-  value: "https://github.com/deeeye2/simple-web-app.git"
+  value: "sg-04ac7dc75e1f54b3a"
 
-output_dir:
+master_name:
   type: str
-  value: "/tmp/gradle_artifacts"
+  value: "k8s-master"
+worker_name:
+  type: str
+  value: "k8s-worker"
